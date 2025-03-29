@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f1d0a1; /* Lighter brownish color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.cookie-container {
+    position: relative;
+    display: inline-block;
+}
+
+.cookie {
+    width: 220px;  /* Slightly larger size */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cookie.clicked {
+    transform: scale(0.8) rotate(-10deg);
+    opacity: 0;
+}
+
+.fortune-text, .lucky-number {
+    font-size: 24px; /* Increased font size */
+    color: #b3541e;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px; /* Slightly larger padding */
+    background-color: #d9b18e; /* Lighter brown color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;  /* Slightly rounded corners for the button */
+}
+
+button:hover {
+    background-color: #c8a478; /* Darker brown shade on hover */
+}
+
+.cookie:hover {
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0); }
+}
